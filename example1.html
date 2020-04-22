@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <script>
+            (function(){
+                var a=10;
+                var b=10;
+                //var c =a+b;
+                //document.getElementById('demo').innerHTML=a+b;
+                //alert(a+b);
+                console.log("My name is Sumana");
+            }()) ;
+           /* (
+                function(){
+                    var a="123";
+                    var rev='';
+                    consloe.log("NUmber is:" +a);
+                    for(var c=0; c<=a.length; c++){
+                        rev=rev+
+                    }
+                    
+                }
+            )*/
+            //myFunction();
+            /*function(){
+            console.log('Hello World!');
+            }();*/
+            var s="123";
+            function reverse(s) {
+  var o = '';
+  for (var i = s.length - 1; i >= 0; i--){
+    o += s[i];
+  }
+  //return o;
+     console.log("value is "+o);
+};
+reverse(s);
+
+
+        </script>
+    </head>
+    <body>
+        <h1> EXample1  </h1>
+        <p id='demo'></p>
+        <script>
+        var person ={name:"Sumana", spousename:"Narendra", age:28, fullname:function(){
+            return this.name + this.spousename;} ,familymbrs:["Suma","Naren","xxx"]
+        };
+          
+    console.log(person.name);
+    document.getElementById('demo').innerHTML=person.spousename;
+</script>
+    
+        
+    </body>
+</html>

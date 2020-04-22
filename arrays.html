@@ -1,0 +1,67 @@
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>The best way to loop through an array is using a standard for loop:</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+var fruits, text, fLen, i ,text1='' ;
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+//var girls=["A","B","C"];
+var girls=[10,20,30,15,18];
+var boys =["1","2","3"];
+var mbrs= girls.concat(boys);
+girls.forEach(myValue);
+
+function myValue(value, index, array) {
+  text1 +=value;
+}
+
+
+//document.getElementById('demo').innerHTML =fruits;
+//function myFruits(){
+  fruits.push("Lemon");
+  //fruits.concat("MuskMelon");
+  //fruits[fruits.length] ="Papaya";
+  //fruits.pop("Apple");
+  //  }
+    //myFruits();
+   // document.getElementById('demo1').innerHTML =fruits.push("Kiwi");
+    //document.getElementById('demo3').innerHTML =fruits.concat("MuskMelon");
+    document.getElementById('demo1').innerHTML =text1;
+    //document.getElementById('demo').innerHTML =fruits;
+    //document.getElementById('demo2').innerHTML =mbrs.join("**");
+fLen = fruits.length;
+
+text ="<ol type='I'>";
+    for(i=0;i<fLen;i++){
+    text += "<li>" + fruits[i] + "</li>";
+    }
+text +="</ol>"; 
+
+/*text1 ="<ul list-style-type='square'>";
+fruits.forEach(myFruits);
+text1 +="</ul>";
+document.getElementById("demo").innerHTML = text1;
+
+function myFruits(value){
+    text1 += "<li>" +value +"</li>";
+}
+
+/*text = "<ul>";
+for (i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";*/
+
+document.getElementById("demo").innerHTML = text;
+
+</script>
+
+</body>
+</html>

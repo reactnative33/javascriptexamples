@@ -1,0 +1,45 @@
+<html>
+    <body>
+        <h2> Fruits List</h2>
+       <p id='demo'></p> 
+       <p id='demo1'></p> 
+       <p id='demo2'></p> 
+       <p id='demo3'></p> 
+       <p id='demo4'></p> 
+       <p id='demo5'></p> 
+       <button onclick="myAge()">Sort it</button>
+       <script>
+           var fruits=["Banana","Mango","Lemon"], i, text='';
+           var family =[{name:"sumana",age:28},{name:"Naren", age:35}];
+          // displayList();
+           function myAge(){
+           family.sort(function(a,b){
+               return a.age-b.age
+           });
+          // displayList();
+         }
+          //function displayList(){
+          document.getElementById('demo5').innerHTML = family[0].name +" " +family[0].age +"<br>" +family[1].name +" " +family[1].age;
+          //}
+           var fruits1 =fruits.splice(1,1,"Sweet Mango");
+           document.getElementById('demo').innerHTML ="Original Array" +fruits;
+           document.getElementById('demo1').innerHTML ="MOdified Array" +fruits.concat("PineApple");
+           document.getElementById('demo2').innerHTML ="Updated Mango in Array" +fruits.splice(1,2,"Sweet Mango");
+           //document.getElementById('demo3').innerHTML ="Updated Banana in Array: " +fruits.delete("Banana");
+           //delete fruits[0];
+
+           for (i=0; i<fruits.length;i++){
+            //text+= fruits[i];
+            if(fruits[i]=="Banana"){
+            //delete fruits[i];
+            fruits.shift();
+            }
+
+            text+= fruits[i];
+                       }
+                       document.getElementById('demo4').innerHTML ="Final Array"+text;
+       </script>
+        
+        
+    </body>
+</html>
